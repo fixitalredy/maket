@@ -193,6 +193,11 @@ span{
   left: 0px;
   top:115px;
 } 
+.page__repair {
+display:none;
+}
+.page__check {
+  display:none;}
 .page__list {
   display: flex;
   justify-content: space-between;
