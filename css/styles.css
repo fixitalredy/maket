@@ -341,4 +341,32 @@ span{
   .page__list{
     flex-wrap: wrap;
   }
+  .header__repair{
+    margin-right:160px;
+  }
+  .header__repair::before{
+    display: none;
+  }
+  .header__repair span{
+    font-family: "TT Lakes", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    position: absolute;
+    display: inline;
+    white-space: nowrap;
+    right: 290px;
+    top: 30px;
+  }
+  .header__check span{
+    font-family: "TT Lakes", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    position: absolute;
+    display: inline;
+    white-space: nowrap;
+    right: 90px;
+    top: 30px;
+  }
 }
