@@ -272,10 +272,13 @@ span{
   .page__description{
     flex-direction: row;
   }
+   .header__menu{
+    margin-right:42.73px
+  }
   .header__logo::after{
     content: url("../images/divider.svg");
     top: 2px;
-    left: 80px;
+    right: 70px;
     position: relative;
   }
   .header__call {
