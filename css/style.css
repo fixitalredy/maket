@@ -208,6 +208,9 @@ display:none;
 .page__list::-webkit-scrollbar {
   width: 0;
 }
+.page__list::-moz-scrollbar {
+  width: 0;
+}
 .list {
   white-space: nowrap;
 }
@@ -373,18 +376,20 @@ display:none;
     display: none;
   }
   .page__repair {
+    display:block;
     background-image: url("../images/repair.svg");
-  background-repeat: no-repeat;
-  width: 40px;
-  height: 40px;
-  margin-right:140px;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    margin-right:150px;
 
   }
   .page__check {
-      background-image:url("../images/checkstatus.svg");
-  background-repeat: no-repeat;
-  width: 40px;
-  height: 40px;
+    display:block;
+    background-image:url("../images/checkstatus.svg");
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
   }
   .page__service{
     flex-direction: row;
