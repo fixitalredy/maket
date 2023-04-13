@@ -205,6 +205,17 @@ display:none;
   max-width:100vw;
   font-family:"TT Lakes";
 }
+.page__list::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 50;
+  right: 0;
+  pointer-events: none;
+  background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255, 1) 90%);
+  width: 10%;
+  height: 4em;
+}
 .page__list::-webkit-scrollbar {
   width: 0;
 }
