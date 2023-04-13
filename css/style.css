@@ -215,8 +215,14 @@ display:none;
   white-space: nowrap;
 }
 .list__item{
-  padding:8px;
-  font-size: 16px;
+  color: #7e7e82;
+  box-sizing: border-box;
+  height: 40px;
+  margin-top: 24px;
+  margin-right: 16px;
+  white-space: nowrap;
+  font-family: "TT Lakes", sans-serif;
+  padding: 8px;
 }
 .list__item:first-child{
   border: 2px solid #B8FFEC;
