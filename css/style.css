@@ -96,15 +96,20 @@ button {
   margin-left: 16px;
 }
 .header{
+  padding-left:16px;
+  padding-right:16px;
+  width: 100%;
+  background-size: cover;
   background-color: white;
   margin-bottom: 24px;
   border-bottom: 1px solid #D9FFF5;
+  margin:0;
+  z-index: 2;
+  max-height: 88px;
 }
 .header__container {
-  
-  display: flex;
   height: 88px;
-  width: 100%;
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
@@ -283,7 +288,10 @@ display:none;
 }
 
 @media(min-width:768px){
-  
+  .header{
+    padding-left:24px;
+    padding-right:24px;
+  }
 .wrapper{
   margin-right:24px;
   margin-left:24px;
@@ -334,6 +342,10 @@ display:none;
   }
 }
 @media(min-width:1120px){
+  .header{
+    padding-left:30px;
+    padding-right:30px;
+  }
   .wrapper{
     margin-left: 30px;
     margin-right: 30px;
