@@ -3,3 +3,4 @@ let brandsList = document.querySelector(".brands__list")
 readMore.addEventListener('click',function(){
 brandsList.style.height = `${brandsList.scrollHeight}px`;
 })
+ 
