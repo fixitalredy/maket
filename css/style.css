@@ -92,9 +92,9 @@ a{
 /*main-------------------------------- */
 body{
   font-family: "TT Lakes";
-  background-color:#F8F8F8;
+  background-color:#F8F8F8; 
 }
-.wrapper{
+.wrapper {
   width: 100%;
   min-height: 100%;
   display:flex;
@@ -103,76 +103,49 @@ body{
   padding-left: 16px;
   box-sizing: border-box;
 }
-.page {
-  background-color:#F8F8F8;
-}
-.page__container{
-  display:flex;
-  flex-direction: column;
-  gap: 24px;
-}
-.page__brands {
-  width: 100%;
-  display:flex;
-  flex-direction:column;
-}
-.sub-header {
-
+.brands__header {
   background-color: white;
   padding-top:16px;
   padding-bottom:16px;
   padding-left:30px;
-  width: calc(100% + 60px); 
+  width: calc(100% + 46px); 
   margin-left: -30px;
-}
-.brands__main {
-  padding-top: 24px;
-  display: flex;
-  flex-direction: column;
-  row-gap: 24px;
+  margin-bottom: 24px;
 }
 .brands__title {
+}
+.subtitle {
   font-size: 16px;
   font-weight: 400;
   color: #7E7E82;
   text-transform: uppercase;
 }
-.brands__list {
+.swiper{
+  width:256px;
+  display: flex;
+  margin: 0;
+  min-width:0;
+  box-sizing: border-box;
+  overflow: visible;
+}
+.swiper-wrapper{
+  width:100%;
+
+}
+.swiper-slide{
   display: flex;
   justify-content: space-between;
-  overflow: scroll;
-  width:100%;
-  font-family:"TT Lakes";
-  white-space: nowrap;
-  gap:16px;
-  transition: height 0.6s;
-}
-.brands__list::after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  top: 50;
-  right: 0;
-  pointer-events: none;
-  background-image: linear-gradient(to right, rgba(248,248,248,0), rgba(248,248,248, 1) 80%);
-  width: 10%;
-  height: 5em;
-}
-
-.brands__item {
-  display: flex;
-  flex-direction: row;
-  min-width: 240px;
+  align-items: center;
   height: 72px;
+  max-width: 240px;
+  margin-right: 16px;
   background-color: white;
   border:1px solid #EAEAEA;
-  align-items: center;
   border-radius:6px;
-
 }
-.brands__logo {
+
+.swiper-slide img{
   margin-left: 16px;
-  margin-right: auto;
 }
 .brands__go-button {
   margin-right:16px;
@@ -212,51 +185,3 @@ body{
     transform: rotate(45deg) translate(5px, -5px);
   }
 }
-.brands__list::-webkit-scrollbar {
-  width: 0;
-}
-
-.brands__read-more {
-align-self: start;
-}
-.read-more {
-  display: block;
-  font-weight: 500;
-}
-.read-more::before{
-  content:url("../images/icon.svg");
-  margin-right: 15px;
-}
-.read-more:hover{
-  scale: 1.1;
-}
-@media (min-width: 768px) {
-  .wrapper{
-    padding-right: 24px;
-    padding-left: 24px;
-  }
-  .brands__item {
-    min-width: 224px;
-  }
-  .brands__item--empty{
-    width:224px
-  }
-  .brands__list {
-    overflow: hidden;
-    flex-wrap: wrap;
-    height: 160px;
-  }
-  .brands__list::after {
-    display: none;
-  }
-}
-@media (min-width: 1120px) {
-  .wrapper{
-    padding-right: 30px;
-    padding-left: 30px;
-  }
-  .brands__item{
-    max-width: 240px;
-  }
-}
- 
