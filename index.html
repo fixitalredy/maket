@@ -4,77 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Меню</title>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
   </head>
   <body>
     <div class="wrapper">
-      <main class="page">
-        <div class="page__container">
-          <div class="page__brands brands">
-            <div class="brands__header sub-header">
-              <h2 class="brands__title">Ремонт техники различных брендов</h2>
-            </div>
-            <div class="brands__main">
-              <ul class="brands__list">
-                <li class="brands__item">
-                  <img class="brands__logo" src="./images/Bitmap.png" alt="lenovo">
-                  <button class="brands__go-button go-button"></button>
-                </li>
-                <li class="brands__item">
-                  <img class="brands__logo" src="./images/Bitmap-1.png" alt="lenovo">
-                  <button class="brands__go-button go-button"></button>
-                </li>
-                <li class="brands__item">
-                  <img class="brands__logo" src="./images/Bitmap-2.png" alt="lenovo">
-                  <button class="brands__go-button go-button"></button>
-                  </link>
-                </li>
-                <li class="brands__item">
-                    <img class="brands__logo" src="./images/Bitmap-3.png" alt="lenovo">
-                    <button class="brands__go-button go-button"></button>
-                </li>
-                <li class="brands__item">
-                  <img class="brands__logo" src="./images/Bitmap-4.png" alt="lenovo">
-                  <button class="brands__go-button go-button"></button>
-                </li>
-                <li class="brands__item">
-                  <img class="brands__logo" src="./images/Bitmap-5.png" alt="lenovo">
-                  <button class="brands__go-button go-button"></button>
-                </li>
-                <li class="brands__item">
-                  <img class="brands__logo" src="./images/Bitmap-6.png" alt="lenovo">
-                  <button class="brands__go-button go-button"></button>
-                </li>
-                <li class="brands__item">
-                  <img class="brands__logo" src="./images/Bitmap-7.png" alt="lenovo">
-                  <button class="brands__go-button go-button"></button>
-                </li>
-                <li class="brands__item">
-                  <img class="brands__logo" src="./images/Bitmap.png" alt="lenovo">
-                  <button class="brands__go-button go-button"></button>
-                </li>
-                <li class="brands__item">
-                  <img class="brands__logo" src="./images/Bitmap-1.png" alt="lenovo">
-                  <button class="brands__go-button go-button"></button>
-                <li class="brands__item">
-                  <img class="brands__logo" src="./images/Bitmap-2.png" alt="lenovo">
-                  <button class="brands__go-button go-button"></button>
-                </li>
-                <li class="brands__item--empty">
-                </li>
-                <li class="brands__item--empty">
-                </li>
-                <li class="brands__item--empty">
-                </li>
-              </ul>
-              <button class="brands__read-more read-more">Показать все</button>
+      <div class="brands">
+        <div class="brands__header">
+          <h2 class="brands__title subtitle">Ремонт техники различных брендов</h2>
+        </div>  
+        <div class="brands__main"> 
+          <div class="brands__swiper swiper">
+            <div class="brands__swiper-wrapper swiper-wrapper ">
+              <div class="brands__swiper-slide swiper-slide">
+                <img src="./images/Bitmap.png" alt="lenovo">
+                <button class="brands__go-button go-button"></button>
+              </div>
+              <div class="brands__swiper-slide swiper-slide">
+                <img src="./images/Bitmap-1.png" alt="lenovo">
+                <button class="brands__go-button go-button"></button>
+              </div>
+              <div class="brands__swiper-slide swiper-slide">
+                <img src="./images/Bitmap-2.png" alt="lenovo">
+                <button class="brands__go-button go-button"></button>
+              </div>
+              <div class="brands__swiper-slide swiper-slide">
+                <img src="./images/Bitmap-3.png" alt="lenovo">
+                <button class="brands__go-button go-button"></button>
+              </div>
+              <div class="brands__swiper-slide swiper-slide">
+                <img src="./images/Bitmap-4.png" alt="lenovo">
+                <button class="brands__go-button go-button"></button>
+              </div>
+              <div class="brands__swiper-slide swiper-slide">
+                <img src="./images/Bitmap-5.png" alt="lenovo">
+                <button class="brands__go-button go-button"></button>
+              </div>
+              <div class="brands__swiper-slide swiper-slide">
+                <img src="./images/Bitmap-6.png" alt="lenovo">
+                <button class="brands__go-button go-button"></button>
+              </div>
+              <div class="brands__swiper-slide swiper-slide">
+                <img src="./images/Bitmap-7.png" alt="lenovo">
+                <button class="brands__go-button go-button"></button>
+              </div>
             </div>
           </div>
-        </div>
-      </main>
+        </div>  
+        <div class="swiper-pagination"></div>
+      </div>
     </div>
-    <script src="./js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+     <script src="./js/script.js"></script>
   </body>
 </html>
