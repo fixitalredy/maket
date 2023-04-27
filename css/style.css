@@ -101,6 +101,11 @@ body{
   padding-right:16px;
   padding-left: 16px;
 }
+.brands{
+  display: flex;
+  flex-direction: column;
+  max-height: 200px;
+}
 .brands__header {
   background-color: white;
   padding-top:16px;
@@ -118,20 +123,37 @@ body{
   text-transform: uppercase;
 }
 .brands__main{
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   width:100%;
+  position: relative;
 }
 
 .swiper{
-  width:256px;
+  width: 256px;
   display: flex;
   margin: 0;
   min-width:0;
   box-sizing: border-box;
+  position: static;
+}
+.brands__swiper::after{ 
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 50;
+  right: 0;
+  pointer-events: none;
+  background-image: linear-gradient(to right, rgba(248,248,248,0), rgba(248,248,248, 1) 100%);
+  width: 10%;
+  height: 5em;
 }
 .swiper-wrapper{
   box-sizing: border-box;
-  width:100%;
+  width: 100%;
+  height: 130px;
+  justify-content: space-between;
 }
 .swiper-slide{
   display: flex;
@@ -184,5 +206,83 @@ body{
   }
   100% {
     transform: rotate(45deg) translate(5px, -5px);
+  }
+}
+.swiper-pagination.brands__bullets{
+  margin: 0 auto;
+}
+.swiper-pagination-bullet{
+  background: #B5B6BC;
+  transform: scale(1.5);
+  margin-right: 10px !important;
+}
+.read-more {
+  font-weight: 500;
+}
+.brands__read-more {
+  display: none;
+  align-self: start;
+}
+.read-more::before{
+  content: url("../images/icon.svg");
+  margin-right: 15px;
+}
+.read-more--arrow-up::before{
+  display: inline-block;
+  transform: rotate(180deg);
+}
+
+@media (min-width: 768px){
+  .wrapper{
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+  .brands{
+    max-height: 512px;
+  }
+  .brands__header {
+    width: calc(100% + 50px); 
+  }
+  .swiper-pagination{
+    display: none;
+  }
+  .brands__read-more {
+    z-index: 223;
+    display: block;
+  }
+  .read-more--arrow-up::before{
+    transform: rotate(180deg);
+  }
+  .brands__swiper{
+    width: 100%;
+    min-height:160px;
+    overflow: hidden;
+    margin-bottom: 16px;
+  }
+  .brands__swiper::after{
+    display: none;
+  }
+  .brands__swiper-wrapper{
+    flex-wrap: wrap;
+    row-gap:16px;
+    column-gap: 16px;
+    transition: height 0.8s;
+  }
+  .brands__swiper-slide{
+    max-width:224px;
+    margin-right: 0px;
+  }
+  .brands__main{
+    height:100%  
+  }
+  .brands__item--empty{
+    width:224px;
+  }
+  
+}
+@media (min-width: 768px){
+  .wrapper{
+    padding-right: 30px;
+    padding-left: 30px;
   }
 }
