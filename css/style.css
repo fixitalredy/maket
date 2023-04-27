@@ -280,7 +280,7 @@ body{
   }
   
 }
-@media (min-width: 768px){
+@media (min-width: 1120px){
   .wrapper{
     padding-right: 30px;
     padding-left: 30px;
