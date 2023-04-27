@@ -104,7 +104,7 @@ body{
 .brands{
   display: flex;
   flex-direction: column;
-  max-height: 200px;
+  max-height: 230px;
 }
 .brands__header {
   background-color: white;
@@ -137,6 +137,7 @@ body{
   min-width:0;
   box-sizing: border-box;
   position: static;
+  overflow: visible;
 }
 .brands__swiper::after{ 
   content: "";
